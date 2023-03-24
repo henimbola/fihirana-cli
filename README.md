@@ -1,7 +1,7 @@
 # Command Line Tool to get Lyrics of malagasy protestants songs
 
 - [ ] Songs 1-10
-- [ ] Songs from number 100
+- [x] Songs from number 100 in ffpm
 - [ ] Add <b>fihirana fanampiny</b> songs
 - [ ] Add `--help` command to display commands
 - [ ] Handle errors when network is down
