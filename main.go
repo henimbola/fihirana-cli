@@ -47,14 +47,9 @@ func getLyrics(number int) {
 
 	doc2, _ := goquery.NewDocument(link)
 
-	file, _ := os.Create(fmt.Sprintf("%d.txt", number))
-
-	defer file.Close()
-
 	fmt.Printf("Lohateny : %v \n\n", doc2.Find(".entry-title").Text())
 	doc2.Find(".entry-content > p").Each(func(i int, s *goquery.Selection) {
 		fmt.Println(s.Text())
 		fmt.Println()
-		file.WriteString(s.Text())
 	})
 }
