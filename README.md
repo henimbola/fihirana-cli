@@ -13,3 +13,20 @@
 - [ ] Commands to choose `fihirana [ffpm|fanampiny|antema|fifohazana] -n [number]`
 - [ ] Commands to seach by title
 - [ ] Select searched song in an interactive mode
+
+## Installation for developers
+
+### Installation of needed packages
+```
+$ go mod download    
+```
+
+### Build the comand-line
+```
+$ go build main.go
+```
+
+### Search for a song
+```
+$ ./main -n [song_number]
+```
