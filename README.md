@@ -13,6 +13,9 @@
 - [ ] Commands to choose `fihirana [ffpm|fanampiny|antema|fifohazana] -n [number]`
 - [ ] Commands to seach by title
 - [ ] Select searched song in an interactive mode
+- [ ] Create system installation script for Linux
+- [ ] Create system installation script for Windows
+- [ ] Create system installation script for MacOs
 
 ## Installation for developers
 
