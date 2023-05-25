@@ -37,13 +37,13 @@ func main() {
 }
 
 func getLyrics(number int) {
-	doc, err := goquery.NewDocument(fmt.Sprintf("https://fihirana.org/?s=%d", number))
+	doc, err := goquery.NewDocument(fmt.Sprintf("https://fihirana.org//par-numero/recherche-multiple?fihirana_numbers=%d", number))
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// Find the title element and print its text
-	link, _ := doc.Find(".entry-title > a").Attr("href")
+	link, _ := doc.Find(".entry-content h4 > a").Attr("href")
 
 	doc2, _ := goquery.NewDocument(link)
 
