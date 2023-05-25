@@ -3,20 +3,21 @@
 ## Installation for developers
 
 ### Installation of needed packages
-```
+```bash
 $ go mod download    
 ```
 
 ### Build the comand-line
-```
+```bash
 $ go build main.go
 ```
 
 ### Search for a song
-```
+```bash
 $ ./main -n [song_number]
 ```
 
+## Tasks
 
 - [x] Songs 1-10
 - [x] Songs from number 100 in ffpm
